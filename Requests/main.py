@@ -1,7 +1,7 @@
 import requests
 
 URL = 'https://api.pokemonbattle.ru/v2'
-TOKEN = '2f6761d64823d41e2eb25c6ccaaeb405'
+TOKEN = 'Token'
 HEADER = {'Content-Type' : 'application/json', 'trainer_token': TOKEN}
 
 BODY_POKEMON = {
@@ -29,3 +29,4 @@ print(response.text)
 
 response  = requests.post(url = f'{URL}/trainers/add_pokeball', headers = HEADER, json = BODY_POKEMON_POKEBALL)
 print(response.text)
+
